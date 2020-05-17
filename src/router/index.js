@@ -140,6 +140,25 @@ export const constantRouterMap = [
       }
     ]
   },
+  {
+    path: '/answer_question',
+    component: Layout,
+    children: [
+      {
+        path: 'question',
+        name: 'Question',
+        component: () => import('@/views/answer_question/question/question'),
+        meta: { title: '问题管理' }
+      },
+      {
+        path: 'answer',
+        name: 'Answer',
+        component: () => import('@/views/answer_question/answer/answer'),
+        meta: { title: '答复管理' }
+      }
+    ],
+    meta: { title: '答疑管理'}
+  },
 
   { path: '*', redirect: '/404', hidden: true }
 ]

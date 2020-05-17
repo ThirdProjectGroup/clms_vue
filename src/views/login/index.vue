@@ -25,7 +25,7 @@
       </el-form-item>
       <el-form-item>
         <el-button :loading="loading" type="primary" style="width:100%;" @click.native.prevent="handleLogin">
-          登录
+          登 录
         </el-button>
       </el-form-item>
       <div class="tips">
