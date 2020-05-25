@@ -147,17 +147,17 @@ export const constantRouterMap = [
       {
         path: 'question',
         name: 'Question',
-        component: () => import('@/views/answer_question/question/question'),
-        meta: { title: '问题管理' }
+        component: () => import('@/views/answer_question/question/List'),
+        meta: { title: '问题管理',  icon:'answer_question'}
       },
       {
         path: 'answer',
         name: 'Answer',
-        component: () => import('@/views/answer_question/answer/answer'),
-        meta: { title: '答复管理' }
+        component: () => import('@/views/answer_question/answer/List'),
+        meta: { title: '答复管理' , icon:'answer_answer'  }
       }
     ],
-    meta: { title: '答疑管理'}
+    meta: { title: '答疑管理', icon:'answer_service' }
   },
 
   { path: '*', redirect: '/404', hidden: true }
