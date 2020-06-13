@@ -126,6 +126,31 @@ export const constantRouterMap = [
     meta: { title: '答疑管理', icon:'answer_service' }
   },
   {
+    path: '/article',
+    component: Layout,
+    children: [
+      {
+        path: 'article',
+        name: 'Article',
+        component: () => import('@/views/article/article/List'),
+        meta: { title: '文章管理',  icon:'article'}
+      },
+      {
+        path: 'type',
+        name: 'Type',
+        component: () => import('@/views/article/type/List'),
+        meta: { title: '类型管理' , icon:'article_type'  }
+      },
+      {
+        path: 'comment',
+        name: 'Comment',
+        component: () => import('@/views/article/comment/List'),
+        meta: { title: '评论管理' , icon:'article_comment'  }
+      }
+    ],
+    meta: { title: '文章管理', icon:'article' }
+  },
+  {
     path: '/users',
     component: Layout,
     children: [
