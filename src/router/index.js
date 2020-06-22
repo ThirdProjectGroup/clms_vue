@@ -158,19 +158,7 @@ export const constantRouterMap = [
         path: 'user',
         name: '用户管理',
         component: () => import('@/views/users/userList'),
-        meta: { title: '用户管理', icon: 'user' }
-      }
-    ]
-  },
-  {
-    path: '/reports',
-    component: Layout,
-    children: [
-      {
-        path: 'report',
-        name: 'Report',
-        component: () => import('@/views/reports/List'),
-        meta: { title: '报告管理', icon: 'form' }
+        meta: { title: '用户管理', icon: 'form' }
       }
     ]
   },
