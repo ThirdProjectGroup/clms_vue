@@ -42,6 +42,16 @@ exports.cssLoaders = function(options) {
       loaders.push('vue-style-loader')
     }
 
+    /*if (options.extract){
+      return ExtractTextPlugin.extract({
+        use: loaders,
+        fallback: vue-style-loader,
+        publicPath: "../../"
+      })
+    }else{
+      return ['vue-style-loader'].concat(loaders)
+    }*/
+
     loaders.push(cssLoader)
 
     if (options.usePostCSS) {

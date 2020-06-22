@@ -151,6 +151,25 @@ export const constantRouterMap = [
     meta: { title: '文章管理', icon:'article' }
   },
   {
+    path: '/class',
+    component: Layout,
+    children: [
+      {
+        path: 'class',
+        name: 'Class',
+        component: () => import('@/views/class/class/List'),
+        meta: { title: '班级管理',  icon:'article'}
+      },
+      {
+        path: 'group',
+        name: 'Group',
+        component: () => import('@/views/class/group/List'),
+        meta: { title: '小组管理',  icon:'article'}
+      }
+    ],
+    meta: { title: '班级管理', icon:'article' }
+  },
+  {
     path: '/users',
     component: Layout,
     children: [

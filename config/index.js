@@ -51,6 +51,7 @@ module.exports = {
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/index.html'),
+    //index: path.resolve(__dirname, './src/index.js'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
@@ -63,7 +64,7 @@ module.exports = {
      * then assetsPublicPath should be set to "/bar/".
      * In most cases please use '/' !!!
      */
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
