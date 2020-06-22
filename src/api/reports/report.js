@@ -15,5 +15,19 @@ export default {
       method: 'post',
       data: page
     })
+  },
+  isCheck(id) { //设置为已批阅
+    return request({
+      url: `/${group}/isCheck/${id}`,
+      method: 'put',
+      data: id
+    })
+  },
+  noCheck(id) { //设置为未批阅
+    return request({
+      url: `/${group}/noCheck/${id}`,
+      method: 'put',
+      data: id
+    })
   }
 }
